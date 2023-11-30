@@ -1,0 +1,120 @@
+* {
+    padding:0;
+    margin:0;
+    color:white;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: xxx-large;
+    -webkit-text-stroke: 1px rgb(249, 12, 217);
+}
+body {
+    background-image: url(space.jpg);
+    background-size: cover;
+    height: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(230, 22, 188);
+    opacity: 70%;
+    width:40%;
+    height: 70%;
+    margin-left: 10px;
+    padding:10px;
+}
+div {
+    display: flex;
+    justify-content:space-between;
+}
+
+.selectorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.radioCheckbox {
+    display: flex;
+    align-items: flex-end;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.buttonContainer {
+    display: flex;
+    justify-content:space-evenly;
+}
+input {
+    margin-bottom:10px;
+    margin-right: 5px;
+    font-size: x-large;
+    color: rgb(91, 22, 230);
+}
+select {
+    margin-bottom:10px;
+    margin-right: 5px;
+    font-size: x-large;
+    color: rgb(91, 22, 230);
+}
+option{
+    color: rgb(91, 22, 230);
+}
+button {
+    margin-top: 10px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(230, 22, 188);
+    opacity: 70%;
+}
+a {
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+}
+button {
+    font-family: 'Krona One', sans-serif;
+    font-size: x-large;
+    color:rgb(247, 4, 199);
+    padding: 5px;
+    background-color:  white;
+    cursor: pointer;
+}
+button:hover {
+    background-color:rgb(247, 4, 199);
+    color:  white;
+    border: 1px solid white;
+
+}
+label {
+    font-family: 'Krona One', sans-serif;
+    font-size: x-large;
+}
+p {
+    font-family: 'Krona One', sans-serif;
+    font-size: x-large;
+}
+.subLabel {
+    font-size:small;
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+input[type="radio"] {
+    cursor: pointer;
+    transform: scale(1.5);
+}
