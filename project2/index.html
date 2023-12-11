@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/planet.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Registration for your One Way Ticket to Space!</h1>
+        <form id="form" autocomplete="on">
+
+            <div>
+                <label for="firstName">First Name*:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name*:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+
+            <div>
+                <label for="address">Street Address*:</label>
+                <input type="text" name="address" id="address">
+            </div>
+
+            <div>
+                <label for="city">City*:</label>
+                <input type="text" name="city" id="city">
+            </div>
+
+            <div>
+                <label for="state">State*:</label>
+                <select id="state" name="state">
+
+                </select>
+            </div>
+
+            <div>
+                <label for="zipCode">Zip Code*:</label>
+                <input type="text" name="zipCode" id="zipCode" maxlength="5" size="5">
+            </div>
+
+            <div>
+                <label for="phoneNumber">Phone Number*:</label>
+                <div>
+                    <input type="text" name="areaCode" id="areaCode" maxlength="3" size="3">
+                    <input type="text" name="phoneNumber" id="phoneNumber" maxlength="7" size="7">
+                </div>
+            </div>
+
+            <div>
+                <label for="email">E-mail*:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="confirmEmail">Confirm E-mail*:</label>
+                <input type="email" name="confirmEmail" id="confirmEmail">
+            </div>
+
+            <div>
+
+                <div class="labelContainer">
+                    <p >Meal Preference*:</p>
+                    <p class="subLabel">(select one)</p>
+                </div>
+
+                <div class="selectorContainer">
+
+                    <div class="radioCheckbox">
+                        <input type="radio" name="meals" id="vegan" value="Vegan">
+                        <label for="vegan">Vegan</label>
+                    </div>
+                    
+                    <div class="radioCheckbox">
+                        <input type="radio" name="meals" id="vegetarian" value="Vegetarian">
+                        <label for="vegetarian">Vegetarian</label>
+                    </div>
+
+                    <div class="radioCheckbox">
+                        <input type="radio" name="meals" id="nonVegetarian" value="Non-Vegetarian">
+                        <label for="nonVegetarian">Non-Vegetarian</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                <div class="labelContainer">
+                    <p>Contact Method*:</p>
+                    <p class="subLabel">(select more than one)</p>
+                </div>
+
+                <div class="selectorContainer">
+
+                    <div class="radioCheckbox">
+                        <input type="checkbox" name="checkbox" id="phoneCheckbox" value="Phone">
+                        <label for="phoneCheckbox">Phone</label>
+                    </div>
+                    
+                    <div class="radioCheckbox">
+                        <input type="checkbox" name="checkbox" id="emailCheckbox" value="Email">
+                        <label for="emailCheckbox">E-mail</label>
+                    </div>
+                </div>
+
+                <div class="selectorContainer">
+
+                    <div class="radioCheckbox">
+                        <input type="checkbox" name="checkbox" id="mailCheckbox" value="Mail">
+                        <label for="mailCheckbox">Mail</label>
+                    </div>
+
+                    <div class="radioCheckbox">
+                        <input type="checkbox" name="checkbox" id="linkedinCheckbox" value="LinkedIn">
+                        <label for="linkedinCheckbox">LinkedIn</label>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
+            </div>
+
+            <div class="buttonContainer">
+                <button id="submitBtn">Submit</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+
+        </form>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
