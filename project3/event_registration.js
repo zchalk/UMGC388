@@ -12,6 +12,7 @@ let totalCost =  document.getElementById('totalCost');
 let customerName = document.getElementById('name');
 let email = document.getElementById('email');
 let timer = document.getElementById('timer');
+let emailRegex = /^\S+@\S+\.\S+$/;
 let interval;
 let valid;
 
@@ -32,22 +33,31 @@ function changeColor (id, color) {
 
 //form validation
 function validateForm () {
+
 	if (customerName.value == "") {
 		changeColor(customerName, "red");
 		document.getElementById('msgname').textContent = "Name is required.";
 		valid = false;
 	} else if (customerName.value) {
 		changeColor(customerName, "green");
+		document.getElementById('msgname').textContent = "";
 		valid = true;
 	}
 	if (email.value == "") {
 		changeColor(email, "red");
 		document.getElementById('msgemail').textContent = "Email is required";
 		valid = false;
-	} else if (email.value) {
+	} else if (!emailRegex.test(email.value)) {
+		changeColor(email, "red");
+        document.getElementById('msgemail').textContent = "Not a valid e-mail address."
+		valid = false;
+
+    } else if (emailRegex.test(email.value)) {
 		changeColor(email, "green");
+		document.getElementById('msgemail').textContent = "";
 		valid = true;
 	}
+	console.log(valid);
 }
 
 
